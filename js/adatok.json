@@ -1,0 +1,194 @@
+[
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "tipus" : "auto",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"Lada",
+        "model" :"1500",
+        "tipus" : "auto",
+        "ar" : 500,
+        "fogyasztas" : 8.4,
+        "kor" : 25,
+        "szin" : "sárga",
+        "img" :"data:image/jpeg;base64,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",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"BMW",
+        "model" :"F800 R",
+        "tipus" : "motor",
+        "ar" : 1500,
+        "fogyasztas" : 6.1,
+        "kor" : 5,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 2
+    },
+    {
+        "marka" :"VoltsWagen",
+        "model" :"California",
+        "ar" : 5600,
+        "fogyasztas" : 7,
+        "kor" : 4,
+        "szin" : "piros",
+        "img" :"https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1562246204/autoexpress/2018/04/cv0140-18-california-edition.jpg",
+        "ferohely" : 7
+    },
+    {
+        "marka" :"Trabant",
+        "model" :"1.1",
+        "ar" : 500,
+        "fogyasztas" : 8,
+        "kor" : 30,
+        "szin" : "kék",
+        "img" :"https://lh3.googleusercontent.com/proxy/wePL2-rDZsGCxvvcYCmtMOrV9GKrZ83Goq7y84AcXohnYTaX4Nhk2CKC1NwrB_Sb4k-5t29XlnCyW6RlYfaBnRdfPIO4I5AmbO26rMiBCqzYmxQXEUkNR1tNM1PAlbdxcvTJBK2Ygxk",
+        "ferohely" : 4
+    },
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },
+    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    },    {
+        "marka" :"Honda",
+        "model" :"Civic",
+        "ar" : 2000,
+        "fogyasztas" : 5,
+        "kor" : 13,
+        "szin" : "piros",
+        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "ferohely" : 5
+    }
+]
