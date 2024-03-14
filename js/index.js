@@ -1,13 +1,36 @@
+import adatok from './adatok.json' assert {type:'json'};
+
+let sorted = adatok;
+
 function $(id)
 {
     return document.getElementById(id);
 }
 
+function Search()
+{
+    $("card_div").innerHTML = "";
+    sorted = [];
+    for (let adat of adatok)
+    {
+        if(adat.marka.includes("Trabant") && adat.szin == "piros")
+        {
+            sorted.push(adat);
+        }
+    }
+
+    if(sorted.length == 0)
+    {
+        console.log("k");
+        $("card_div").innerHTML = "<h1>Nincs találat</h1>";
+    }
+    GenerateCard();
+}
 
 //Kártyák legenerálása
 function GenerateCard()
 {
-    for(let i = 0; i<10; i++)
+    for (let car of sorted)
     {
         let cardarea = $("card_div");
         let card = document.createElement("div");
@@ -15,7 +38,7 @@ function GenerateCard()
         cardarea.appendChild(card);
     
         let img = document.createElement("img");
-        img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS23hEKl3aWmcpLQCxarhwwwKxOPqx4Tlfkcc8it612lg&s";
+        img.src = car.img;
         img.classList.add("card-img-top", "img-fluid");
         card.appendChild(img);
 
@@ -28,7 +51,7 @@ function GenerateCard()
         card_body.appendChild(card_title);
 
         let card_text = document.createElement("p");
-        card_text.innerHTML = "Márka: Porsche<br>Modell: 963";
+        card_text.innerHTML = car.marka + " " + car.model;
         card_body.appendChild(card_text);
 
         let card_button = document.createElement("button");
@@ -40,3 +63,4 @@ function GenerateCard()
 }
 
 window.addEventListener("load", GenerateCard);
+$("keres").addEventListener("click", Search);
