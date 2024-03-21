@@ -153,13 +153,13 @@
         "ferohely" : 20
     },
     {
-        "marka" :"Honda",
-        "model" :"Civic",
+        "marka" :"Audi",
+        "model" :"A4",
         "ar" : 2000,
         "fogyasztas" : 5,
-        "kor" : 13,
+        "kor" : 27,
         "szin" : "piros",
-        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "img" :"https://i.ytimg.com/vi/UxzVpSP5i70/hqdefault.jpg",
         "ferohely" : 5
     },
     {
@@ -173,22 +173,22 @@
         "ferohely" : 4
     },
     {
-        "marka" :"Honda",
-        "model" :"Civic",
-        "ar" : 2000,
-        "fogyasztas" : 5,
-        "kor" : 13,
-        "szin" : "piros",
-        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "marka" :"Citroen",
+        "model" :"DS4",
+        "ar" : 1800,
+        "fogyasztas" : 6,
+        "kor" : 12,
+        "szin" : "fehér",
+        "img" :"https://cdn.car-recalls.eu/wp-content/uploads/2020/04/citroen-ds4-2013-recall-768x477.jpg",
         "ferohely" : 5
     },    {
-        "marka" :"Honda",
-        "model" :"Civic",
+        "marka" :"Audi",
+        "model" :"100",
         "ar" : 2000,
-        "fogyasztas" : 5,
-        "kor" : 13,
-        "szin" : "piros",
-        "img" :"https://bluesky.cdn.imgeng.in/cogstock-images/bc610c3c-a4cd-457d-8cd0-772ceb297d96.jpg?imgeng=/w_960/",
+        "fogyasztas" : 9.5,
+        "kor" : 32,
+        "szin" : "fekete",
+        "img" :"https://static.cargurus.com/images/site/2011/02/24/16/29/1992_audi_100-pic-3215822442315546456-1600x1200.jpeg",
         "ferohely" : 5
     }
 ]
