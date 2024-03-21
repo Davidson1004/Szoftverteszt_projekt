@@ -13,7 +13,7 @@ function Search()
     sorted = [];
     for (let adat of adatok)
     {
-        if(adat.marka.includes("Trabant") && adat.szin == "piros")
+        if(adat.marka.includes("Honda") && adat.szin == "piros")
         {
             sorted.push(adat);
         }
@@ -58,6 +58,8 @@ function GenerateCard()
         card_button.type = "button";
         card_button.classList.add("btn", "btn-primary");
         card_button.innerText = "További információk";
+        card_button.setAttribute("data-bs-toggle", "modal");
+        card_button.setAttribute("data-bs-target", "#exampleModal");
         card_body.appendChild(card_button);
     }
 }
