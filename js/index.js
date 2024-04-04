@@ -11,15 +11,43 @@ function Search()
 {
     $("card_div").innerHTML = "";
     sorted = [];
-    searchquerys = document.getElementsByClassName("search");
+    let searchquerys = document.getElementsByClassName("search");
     for (let adat of adatok)
     {
-        console.log(parseInt(searchquerys[3].value));
-        if(adat.model.includes(searchquerys[0].value) && adat.marka.includes(searchquerys[1].value) && adat.ferohely >= parseInt(searchquerys[2].value) && adat.fogyasztas >= parseInt(searchquerys[3].value) && adat.szin == searchquerys[4].value.toLowerCase() && adat.ar <= parseInt(searchquerys[5].value))
+        let pushable = true;
+        if(!adat.model.includes(searchquerys[0].value) || !adat.marka.includes(searchquerys[1].value) || (adat.szin != searchquerys[4].value.toLowerCase() && searchquerys[4].value != "0"))
+        {
+            console.log("asd");
+            pushable = false;
+        }
+        if(searchquerys[2].value != "")
+        {
+            if(adat.ferohely < parseInt(searchquerys[2].value))
+            {
+                pushable = false;
+            }
+        }
+        if(searchquerys[3].value != "")
+        {
+            if(adat.fogyasztas > parseInt(searchquerys[3].value))
+            {
+                pushable = false;
+            }
+        }
+        if(searchquerys[5].value != "")
+        {
+            if(adat.ar > parseInt(searchquerys[5].value))
+            {
+                pushable = false;
+            }
+        }
+        if(pushable)
         {
             sorted.push(adat);
         }
     }
+
+    console.log(sorted);
 
     if(sorted.length == 0)
     {
