@@ -51,37 +51,37 @@
             <form>
               <div class="mb-3">
                 <label for="nev" class="form-label">Név</label>
-                <input type="text" class="form-control" id="nev" name="nev">
+                <input type="text" class="form-control search" id="nev" name="nev">
               </div>
               <div class="mb-3">
                 <label for="marka" class="form-label">Márka</label>
-                <input type="text" class="form-control" id="marka" name="marka">
+                <input type="text" class="form-control search" id="marka" name="marka">
               </div>
               <div class="mb-3">
                 <label for="ferohely" class="form-label">Férőhelyek</label>
-                <input type="number" class="form-control" id="ferohely" name="ferohely">
+                <input type="number" class="form-control search" id="ferohely" name="ferohely">
               </div>
               <div class="mb-3">
                 <label for="fogyasztas" class="form-label">Fogyasztás</label>
-                <input type="number" class="form-control" id="fogyasztas" name="fogyasztas">
+                <input type="number" class="form-control search" id="fogyasztas" name="fogyasztas">
               </div>
               <div class="mb-3">
                 <label for="szin" class="form-label">Szín</label>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select search" aria-label="Default select example">
                   <option selected disabled>Válassz színt</option>
-                  <option value="1">Fekete</option>
-                  <option value="2">Fehér</option>
-                  <option value="3">Kék</option>
-                  <option value="1">Piros</option>
-                  <option value="2">Zöld</option>
-                  <option value="3">Sárga</option>
-                  <option value="3">Szürke</option>
+                  <option value="Fekete">Fekete</option>
+                  <option value="Fehér">Fehér</option>
+                  <option value="Kék">Kék</option>
+                  <option value="Piros">Piros</option>
+                  <option value="Zöld">Zöld</option>
+                  <option value="Sárga">Sárga</option>
+                  <option value="Szürke">Szürke</option>
                   
                 </select>
               </div>
               <div class="mb-3">
                 <label for="ar" class="form-label">Ár: <span id="ar-ertek">0 Ft</span></label>
-                <input type="range" step="100" class="form-range" id="ar" name="ar" min="0" max="20000" oninput="updateRangeValue(this.value)">
+                <input type="range" step="100" class="form-range search" id="ar" name="ar" min="0" max="20000" oninput="updateRangeValue(this.value)">
               </div>
               
               <script>
@@ -96,6 +96,12 @@
           </div>
       </div>
         <div class="col-md-8">
+          <div class="container">
+            <div id="card_div" class="row">
+
+            </div>
+          </div>
+        <button id="keres">Keres</button>
           <!-- Ebben a részben helyezd el a jobb oldali tartalmat -->
         </div>
       </div>
@@ -116,8 +122,8 @@
     
     
 
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="./js/index.js" type="module"></script>
 </body>
 </html>
