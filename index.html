@@ -34,5 +34,120 @@
   </div>
     <script src="./js/index.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Autókölcsönzés</title>
+</head>
+<body>
+  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="img/Cletter.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            <b class="navbarszoveg">Autókölcsönzés</b>
+        </a>
+    </div>
+</nav>
+
+
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/carouselauto4.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/carouselauto5.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/carouselauto6.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    
+<hr size="3" style="border-width: 5px ;">
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 " style="border-right: 2px solid #000;">
+          <div class="container mb-3">
+            <form>
+              <div class="mb-3">
+                <label for="nev" class="form-label">Név</label>
+                <input type="text" class="form-control" id="nev" name="nev">
+              </div>
+              <div class="mb-3">
+                <label for="marka" class="form-label">Márka</label>
+                <input type="text" class="form-control" id="marka" name="marka">
+              </div>
+              <div class="mb-3">
+                <label for="ferohely" class="form-label">Férőhelyek</label>
+                <input type="number" class="form-control" id="ferohely" name="ferohely">
+              </div>
+              <div class="mb-3">
+                <label for="fogyasztas" class="form-label">Fogyasztás</label>
+                <input type="number" class="form-control" id="fogyasztas" name="fogyasztas">
+              </div>
+              <div class="mb-3">
+                <label for="szin" class="form-label">Szín</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled>Válassz színt</option>
+                  <option value="1">Fekete</option>
+                  <option value="2">Fehér</option>
+                  <option value="3">Kék</option>
+                  <option value="1">Piros</option>
+                  <option value="2">Zöld</option>
+                  <option value="3">Sárga</option>
+                  <option value="3">Szürke</option>
+                  
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="ar" class="form-label">Ár: <span id="ar-ertek">0 Ft</span></label>
+                <input type="range" step="100" class="form-range" id="ar" name="ar" min="0" max="20000" oninput="updateRangeValue(this.value)">
+              </div>
+              
+              <script>
+                function updateRangeValue(value) {
+                  document.getElementById('ar-ertek').textContent = value + ' Ft';
+                }
+              </script>
+              
+              
+              <button type="button" class="btn btn-primary">Keresés</button> 
+            </form>
+          </div>
+      </div>
+        <div class="col-md-8">
+          <!-- Ebben a részben helyezd el a jobb oldali tartalmat -->
+        </div>
+      </div>
+    </div>
+    
+    
+
+    <footer class="bg-dark text-white py-2">
+      <div class="container">
+        <div class="row">
+            <div class="border-top mt-5 pt-4">
+              <p class="text-center">© 2024 Autókölcsönzés. Minden jog fenntartva.</p>
+            </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,14 @@
+.carousel-caption{
+    text-decoration:  10px black;
+}
+ .navbarszoveg {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    
+ }
+body{
+    background-color: antiquewhite;
+    border-left: solid 10px;
+    border-right: solid 10px;
+}
+
