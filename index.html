@@ -12,8 +12,13 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="img/Cletter.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-            <b class="navbarszoveg">Autókölcsönzés</b>
+            <b class="navbarszoveg" id="yes">Autókölcsönzés</b>
         </a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" id="foglalasok"aria-current="page" href="#">Foglalások</a>
+            </li>
+          </ul>
     </div>
 </nav>
 
@@ -133,6 +138,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+            <button type="button" class="btn btn-primary" id="kölcsönzes">Kölcsönzés</button>
           </div>
         </div>
       </div>

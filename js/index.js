@@ -1,5 +1,7 @@
 import adatok from './adatok.json' assert {type:'json'};
 
+let lefoglaltak = [];
+
 function $(id)
 {
     return document.getElementById(id);
@@ -143,6 +145,10 @@ function modalChange(button)
     let fogyasztas = document.createElement("li");
     let kor = document.createElement("li");
     let img = document.createElement("img");
+    let id = document.createElement("p");
+    id.setAttribute("hidden", true);
+    id.classList.add("id");
+    id.innerHTML= auto.id;
 
     ar.innerHTML = auto.ar + "Ft / óra";
     ferohely.innerHTML = auto.ferohely + "ülés";
@@ -152,6 +158,7 @@ function modalChange(button)
     img.setAttribute("style", "width: 400px");
 
     modalBody.appendChild(img);
+    modalBody.appendChild(id);
     ul.appendChild(ar);
     ul.appendChild(ferohely);
     ul.appendChild(fogyasztas);
@@ -159,9 +166,52 @@ function modalChange(button)
     modalBody.appendChild(ul);
 }
 
+function foglalas(button)
+{
+    let body = document.getElementById("mBody");
+    let searchId;
+    for(let child of body.childNodes)
+    {
+        if(child.classList.contains("id"))
+        {
+            searchId = parseInt(child.innerHTML);
+        }
+    }
+
+    let auto;
+    for(let a of adatok)
+    {
+        if(a.id == searchId)
+        {
+            auto = a;
+        }
+    }
+
+    lefoglaltak.push(auto);
+
+    alert("Sikeres Foglalás!");
+    console.log(body);
+    console.log(auto);
+    console.log(lefoglaltak);
+}
+
+$("kölcsönzes").addEventListener("click", ()=>{
+    foglalas($("kölcsönzes"));
+})
+
 //sorted = adatok
 window.addEventListener("load", function(){
     GenerateCard(adatok);
+});
+
+$("foglalasok").addEventListener("click", ()=>{
+    $("card_div").innerHTML = "";
+    GenerateCard(lefoglaltak);
+})
+
+$("yes").addEventListener("click", function(){
+    let sortedvalues = Search(getInput());
+    GenerateCard(sortedvalues);
 });
 $("keres").addEventListener("click", function(){
     let sortedvalues = Search(getInput());
