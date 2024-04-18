@@ -13,7 +13,7 @@ function Search(values)
     for (let adat of adatok)
     {
         let pushable = true;
-        if(!adat.model.includes(values[0]) || !adat.marka.includes(values[1]) || (adat.szin != values[4].toLowerCase() && values[4] != "0"))
+        if(!adat.model.toLowerCase().includes(values[0].toLowerCase()) || !adat.marka.toLowerCase().includes(values[1].toLowerCase()) || (adat.szin != values[4].toLowerCase() && values[4] != "0"))
         {
             console.log("asd");
             pushable = false;
@@ -167,3 +167,5 @@ $("keres").addEventListener("click", function(){
     let sortedvalues = Search(getInput());
     GenerateCard(sortedvalues);
 });
+
+export default {Search};
