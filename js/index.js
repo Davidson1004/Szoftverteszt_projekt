@@ -50,8 +50,6 @@ function Search(values)
     return sorted;
 }
 
-//Kártyák legenerálása
-//Kártyák legenerálása
 function GenerateCard(sorted) {
     if (sorted.length == 0) {
         console.log("k");
@@ -60,7 +58,7 @@ function GenerateCard(sorted) {
         for (let car of sorted) {
             let cardarea = $("card_div");
             let card = document.createElement("div");
-            card.classList.add("card", "col-lg-4", "col-md-4", "col-sm-12", "p-0", "my-3", "mx-auto");
+            card.classList.add("card", "col-lg-4", "col-md-4", "col-sm-12", "p-2", "m-2", "mx-auto", "border");
             cardarea.appendChild(card);
 
             let img = document.createElement("img");
@@ -94,6 +92,8 @@ function GenerateCard(sorted) {
         }
     }
 }
+
+
 
 
 
