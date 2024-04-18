@@ -67,7 +67,7 @@ function GenerateCard(sorted)
     
             let img = document.createElement("img");
             img.src = car.img;
-            img.classList.add("card-img-top", "img-fluid");
+            img.classList.add("card-img-top", "img-fluid" ,"card-kep");
             card.appendChild(img);
 
             let card_body = document.createElement("div");
