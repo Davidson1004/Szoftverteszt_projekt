@@ -49,55 +49,54 @@ function Search(values)
 }
 
 //Kártyák legenerálása
-function GenerateCard(sorted)
-{
-    if(sorted.length == 0)
-    {
+//Kártyák legenerálása
+function GenerateCard(sorted) {
+    if (sorted.length == 0) {
         console.log("k");
         $("card_div").innerHTML = "<h1>Nincs találat</h1>";
-    }
-
-    else{
-        for (let car of sorted)
-        {
+    } else {
+        for (let car of sorted) {
             let cardarea = $("card_div");
             let card = document.createElement("div");
-            card.classList.add("card", "col-lg-4", "col-md-4", "col-sm-12", "p-0");
+            card.classList.add("card", "col-lg-4", "col-md-4", "col-sm-12", "p-0", "my-3", "mx-auto");
             cardarea.appendChild(card);
-    
+
             let img = document.createElement("img");
             img.src = car.img;
-            img.classList.add("card-img-top", "img-fluid" ,"card-kep");
+            img.classList.add("card-img-top", "img-fluid", "card-kep");
             card.appendChild(img);
 
             let card_body = document.createElement("div");
-            card_body.classList.add("card-body");
+            card_body.classList.add("card-body", "d-flex", "flex-column", "align-items-start", "justify-content-end");
             card.appendChild(card_body);
-
-            let card_title = document.createElement("h5");
-            card_title.classList.add("card-title");
-            card_body.appendChild(card_title);
-
-            let card_text = document.createElement("p");
-            card_text.innerHTML = car.marka + " " + car.model;
-            card_body.appendChild(card_text);
-            let id = document.createElement("p");
-            id.setAttribute("hidden", true);
-            id.classList.add("id");
-            id.innerHTML= car.id;
-            card_body.appendChild(id);
 
             let card_button = document.createElement("button");
             card_button.type = "button";
             card_button.classList.add("btn", "btn-primary", "infoGomb");
-            card_button.innerText = "További információk";
+            card_button.textContent = "További információk";
             card_button.setAttribute("data-bs-toggle", "modal");
             card_button.setAttribute("data-bs-target", "#info");
-            card_button.addEventListener("click", ()=>{modalChange(card_button)});
+            card_button.addEventListener("click", () => { modalChange(card_button) });
+
+            let card_title = document.createElement("h5");
+            card_title.classList.add("card-title", "mt-2");
+            card_title.textContent = car.marka + " " + car.model;
+            card_body.appendChild(card_title);
+
             card_body.appendChild(card_button);
+            let id = document.createElement("p");
+            id.setAttribute("hidden", true);
+            id.classList.add("id");
+            id.textContent = car.id;
+            card_body.appendChild(id);
         }
     }
 }
+
+
+
+
+
 
 function getInput()
 {

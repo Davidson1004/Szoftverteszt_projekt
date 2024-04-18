@@ -37,7 +37,7 @@
     },
     {
         "id" : 4,
-        "marka" :"VoltsWagen",
+        "marka" :"VolksWagen",
         "model" :"California",
         "ar" : 5600,
         "fogyasztas" : 7,
@@ -53,7 +53,7 @@
         "ar" : 500,
         "fogyasztas" : 8,
         "kor" : 30,
-        "szin" : "kék",
+        "szin" : "szürke",
         "img": "img/levagotthatter/trabant1.1.png", 
         "ferohely" : 4
     },
