@@ -15,7 +15,6 @@ function Search(values)
         let pushable = true;
         if(!adat.model.includes(values[0]) || !adat.marka.includes(values[1]) || (adat.szin != values[4].toLowerCase() && values[4] != "0"))
         {
-            console.log("asd");
             pushable = false;
         }
         if(values[2] != "")
