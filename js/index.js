@@ -52,7 +52,6 @@ function GenerateCard(sorted)
 {
     if(sorted.length == 0)
     {
-        console.log("k");
         $("card_div").innerHTML = "<h1>Nincs találat</h1>";
     }
 
