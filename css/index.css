@@ -12,17 +12,17 @@ body{
     border-right: solid 10px;
 }
 .card-kep {
-    max-width: 100%; /* A kép maximális szélessége 100%-a a kártya szélességének */
-    max-height: 100%; /* A kép maximális magassága 100%-a a kártya magasságának */
+    max-width: 100%; 
+    max-height: 100%; 
     object-fit: contain;
 }
-/* style.css */
+
 
 .button-text {
     position: absolute;
-    bottom: 10px; /* A gomb alja 10px-re legyen az elem aljától */
-    left: 50%; /* A gomb szövege legyen középen */
-    transform: translateX(-50%); /* A gomb szövege legyen pontosan a gomb közepén */
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
 }
 
 
